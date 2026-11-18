@@ -6,6 +6,15 @@ const nextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+  remotePatterns: [
+    {
+      protocol: "https",
+      hostname: "placehold.co",
+      pathname: "/**",
+    },
+  ],
+},
   turbopack: {
     rules: {
       "*.css": {
